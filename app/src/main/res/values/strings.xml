@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CadastroAluno</string>
+
+    <!-- Strings do Menu -->
+    <string name="novo">Novo</string>
+    <string name="mapa">Mapa</string>
+    <string name="mais_opcoes">Mais Opções</string>
+    <string name="sincronizar">Sincronizar</string>
+    <string name="provas">Provas</string>
+    <string name="preferencias">Preferências</string>
+
+    <!-- Strings do Menu de Contexto -->
+    <string name="ligar">Ligar</string>
+    <string name="enviarSms">Enviar SMS</string>
+    <string name="acharNoMapa">Achar no Mapa</string>
+    <string name="navegarSite">Navegar no Site</string>
+    <string name="enviarEmail">Enviar Email</string>
+    <string name="deletar">Excluir</string>
+
+    <!-- Strings -->
+    <string name="action_settings">Settings</string>
+    <string name="nome_aluno">Nome do Aluno</string>
+    <string name="add_aluno">Adicionar Aluno</string>
+    <string name="title_activity_formulario">Dados do Aluno</string>
+    <string name="foto_aluno">Foto do Aluno</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="site">Site</string>
+    <string name="email">Email</string>
+    <string name="endereco">Endereço</string>
+    <string name="nota">Nota</string>
+    <string name="salvar_dados">Salvar dados</string>
+</resources>

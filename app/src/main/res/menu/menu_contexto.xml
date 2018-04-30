@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_contexto_ligar"
+        android:title="@string/ligar"
+        />
+    <item
+        android:id="@+id/menu_contexto_Enviar_Sms"
+        android:title="@string/enviarSms"
+        />
+    <item
+        android:id="@+id/menu_contexto_Achar_no_mapa"
+        android:title="@string/acharNoMapa"
+        />
+    <item
+        android:id="@+id/menu_contexto_navegar_site"
+        android:title="@string/navegarSite"
+        />
+    <item
+        android:id="@+id/menu_contexto_enviar_email"
+        android:title="@string/enviarEmail"
+        />
+    <item
+        android:id="@+id/menu_contexto_excluir"
+        android:title="@string/deletar"
+        />
+
+</menu>

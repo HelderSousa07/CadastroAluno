@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".FormularioActivity"
+    tools:showIn="@layout/formulario_layout">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="71dp"
+        android:layout_height="77dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/foto_aluno"
+        android:src="@drawable/ic_add_foto"
+
+        />
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/nome" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ex: João da Silva">
+
+        <requestFocus/>
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTelefone"
+        android:layout_margin="10dp"
+        android:text="@string/telefone"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTelefone"
+        android:ems="10"
+        android:hint="ex: (099) 99999-9999"
+        android:inputType="phone"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSite"
+        android:text="@string/site"
+        android:layout_margin="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSite"
+        android:hint="ex: www.exemplo.com.br"
+        android:ems="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:layout_margin="10dp"
+        android:text="@string/email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:hint="ex: exemplo@gmail.com"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEndereco"
+        android:text="@string/endereco"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEndereco"
+        android:hint="ex: Rua 1, nº 01, Bairro Glória"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNota"
+        android:layout_margin="10dp"
+        android:text="@string/nota"
+        />
+
+    <SeekBar
+        android:id="@+id/sbNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSalvarDados"
+        android:text="@string/salvar_dados"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>
+
+
+</ScrollView>
