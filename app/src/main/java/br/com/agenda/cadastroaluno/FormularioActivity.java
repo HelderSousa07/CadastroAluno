@@ -90,9 +90,8 @@ public class FormularioActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-            pedirPermissaoParaEscreverArquivo();
-            pedirPermissaoParaCamera();
-
+               pedirPermissaoParaCamera();
+                pedirPermissaoParaEscreverArquivo();
 
 
             }
@@ -128,6 +127,8 @@ public class FormularioActivity extends AppCompatActivity {
     }
 
     public void chamarCamera(){
+
+
         Intent chamarCamera = new Intent();
         chamarCamera.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
 
@@ -165,6 +166,8 @@ public class FormularioActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(FormularioActivity.this,
                     new String[]{Manifest.permission.CAMERA},MY_PERMISSION_REQUEST_CAMERA);
 
+        }else{
+            //chamarCamera();
         }
     }
 
@@ -176,6 +179,8 @@ public class FormularioActivity extends AppCompatActivity {
                     new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}
                     ,MY_PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
 
+        }else{
+            chamarCamera();
         }
     }
 
@@ -189,7 +194,7 @@ public class FormularioActivity extends AppCompatActivity {
 
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                    chamarCamera();
+                    //chamarCamera();
 
                 }
 
